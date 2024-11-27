@@ -16,7 +16,7 @@ export default function EditModal({item,closeModal,setReload}) {
             try {
               if (Auth) {
                 
-                const response= await axios.put(`http://localhost:8000/product/update/${item._id}`,{
+                const response= await axios.put(`https://ecom-backend-p01l.onrender.com/product/update/${item._id}`,{
                   title,desc:description,Image_url:imageUrl
                 })
                  

@@ -15,7 +15,7 @@ export default function AddModal({closeModal,setReload}) {
             try {
               if (Auth) {
                 
-                const response= await axios.post(`http://localhost:8000/product/create/${Auth._id}`,{
+                const response= await axios.post(`https://ecom-backend-p01l.onrender.com/product/create/${Auth._id}`,{
                   title,desc:description,Image_url:imageUrl
                 })
                  
